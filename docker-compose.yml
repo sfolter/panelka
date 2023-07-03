@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: tad
+      POSTGRES_PASSWORD: tad
+      POSTGRES_DB: panelka
+    ports:
+      - "5432:5432"
